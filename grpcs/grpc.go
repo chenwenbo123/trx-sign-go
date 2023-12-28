@@ -22,7 +22,7 @@ func NewClient(node string) (*Client, error) {
 	c := new(Client)
 	c.node = node
 	c.GRPC = client.NewGrpcClient(node)
-	err := c.GRPC.Start()
+	err := c.GRPC.Start(grpc.WithInsecure())
 	if err != nil {
 		return nil, fmt.Errorf("grpc client start error: %v", err)
 	}

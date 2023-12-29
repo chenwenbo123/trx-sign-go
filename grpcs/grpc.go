@@ -8,6 +8,7 @@ import (
 	"github.com/fbsobreira/gotron-sdk/pkg/client"
 	"github.com/fbsobreira/gotron-sdk/pkg/proto/api"
 	"github.com/fbsobreira/gotron-sdk/pkg/proto/core"
+	"google.golang.org/grpc"
 	"math/big"
 	"strings"
 	"time"
